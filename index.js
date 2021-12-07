@@ -8,3 +8,16 @@ const stopBtn = document.getElementById("stop-btn")
 // Stretch goals:
 // - Add volume controls.
 // - Allow the user to select different sounds.
+
+const audio = new Audio('bells.mp3')
+playBtn.addEventListener('click', ()=>{
+    audio.play();
+})
+
+pauseBtn.addEventListener('click', ()=> {
+    audio.pause();
+})
+
+stopBtn.addEventListener('click', ()=> {
+    audio.load();
+})
