@@ -67,3 +67,27 @@ button:hover {
 .stop-btn {
   background-color: var(--wine-red);
 }
+
+.animate {
+  display: inline-block;
+  -webkit-animation-name: ring;
+  -webkit-animation-duration: 0.75s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes ring {
+  /* animation here */
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20%,
+  60% {
+    transform: rotate(30deg);
+  }
+  40%,
+  80% {
+    transform: rotate(-30deg);
+  }
+}
